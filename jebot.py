@@ -51,7 +51,7 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>AnyDL Bot Help!
+               text="""<b>Pitarte Bot Help!
 
 Just send a url to download it in video or audio format!
 
