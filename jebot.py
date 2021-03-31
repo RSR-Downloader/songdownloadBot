@@ -27,9 +27,9 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm AnyDL Bot
+               text="""<b>Hey There, I'm Pitarte
 
-I can download video or audio from Youtube. Made by @ImJanindu 🇱🇰
+I can download video or audio from Youtube and Other site Made by @rsrtginfo
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -37,10 +37,10 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                            "📣Group", url="https://t.me/rsrtginfo")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "🔔Channel", url="https://t.me/mizolibrary")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -53,9 +53,9 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>AnyDL Bot Help!
 
-Just send a Youtube url to download it in video or audio format!
+Just send a url to download it in video or audio format!
 
-~ @Infinity_BOTs</b>""",
+~ @rsrtginfo</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -64,7 +64,7 @@ Just send a Youtube url to download it in video or audio format!
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Channel", url="https://t.me/mizolibrary")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -75,21 +75,21 @@ async def about(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>About AnyDL Bot!</b>
+               text="""<b>About Pitarte</b>
 
-<b>♞ Developer:</b> <a href="https://t.me/ImJanindu">Janindu 🇱🇰</a>
+<b>♞ Developer:</b> <a href="https://t.me/rsrmusic">𝚁𝚂𝚁 𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕★</a>
 
-<b>♞ Support:</b> <a href="https://t.me/InfinityBOTs_Support">Infinity BOTs Support</a>
+<b>♞ Group:</b> <a href="https://t.me/rsrtginfo">RSR TG info★</a>
 
-<b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
+<b>♞ Channel:</b> <a href="https://t.me/mizolibrary">Mizo Library</a>
 
-<b>~ @Infinity_BOTs</b>""",
+<b>~ @rsrtginfo</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "Back", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Channel", url="https://t.me/mizolibrary")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -167,7 +167,7 @@ async def send_audio(message: Message, info_dict, audio_file):
         get_file_extension_from_url(thumbnail_url)
     # info (s2tw)
     webpage_url = info_dict['webpage_url']
-    title = '@Infinity_BOTs - '+s2tw(info_dict['title'])
+    title = '@rsrtginfo - '+s2tw(info_dict['title'])
     caption = f"<b><a href=\"{webpage_url}\">{title}</a></b>"
     duration = int(float(info_dict['duration']))
     performer = s2tw(info_dict['uploader'])
@@ -218,7 +218,7 @@ async def send_video(message: Message, info_dict, video_file):
         get_file_extension_from_url(thumbnail_url)
     # info (s2tw)
     webpage_url = info_dict['webpage_url']
-    title = '@Infinity_BOTs - '+s2tw(info_dict['title'])
+    title = '@rsrtginfo - '+s2tw(info_dict['title'])
     caption = f"<b><a href=\"{webpage_url}\">{title}</a></b>"
     duration = int(float(info_dict['duration']))
     width, height = get_resolution(info_dict)
@@ -276,7 +276,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @Infinity_BOTs
+Join @rsrtginfo
 """
 )
 
